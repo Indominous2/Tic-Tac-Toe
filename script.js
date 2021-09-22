@@ -121,7 +121,7 @@ function IfElse() {
 let resetArr = [];
 
 let newox = [];
-let b = 0;
+let b = 1;
 
 function reset() {
     setTimeout(() => {
@@ -154,8 +154,10 @@ function GameLoop() {
 
             if (player1 === "O") {
                 ox = ["O", "X", "O", "X", "O", "X", "O", "X", "O"];
+                h1.innerText = "O's turn";
             } else if (player1 === "X") {
                 ox = ["X", "O", "X", "O", "X", "O", "X", "O", "X"];
+                h1.innerText = "X's turn";
             }
 
             for (let i = 0; i < zerosCrosses.length; i++) {
@@ -165,6 +167,7 @@ function GameLoop() {
                     zerosCrosses[i].style.pointerEvents = "none";
                     oOrC.push(i);
                     console.log(oOrC)
+                    h1.innerText = ox[b++] + "'s turn";
                     textinspect.push(zerosCrosses[i].innerText);
                     if (
                         oOrC.length == 5 ||
