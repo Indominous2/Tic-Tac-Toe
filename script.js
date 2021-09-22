@@ -163,11 +163,11 @@ function GameLoop() {
             for (let i = 0; i < zerosCrosses.length; i++) {
 
                 function audio() {
-                    let audio = new Audio("wantMe.mp3");
+                    let audio = new Audio("music.mp3");
                     audio.play();
                 }
                 zerosCrosses[i].addEventListener("click", () => {
-                    let audio = new Audio("wantMe.mp3");
+                    let audio = new Audio("music.mp3");
                     audio.play();
                 })
                 setInterval(audio(), 70000)
