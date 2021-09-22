@@ -169,6 +169,9 @@ function GameLoop() {
                     console.log(oOrC)
                     h1.innerText = ox[b++] + "'s turn";
                     textinspect.push(zerosCrosses[i].innerText);
+                    if (b == 9) {
+                        h1.innerText = ""
+                    }
                     if (
                         oOrC.length == 5 ||
                         oOrC.length == 6 ||
