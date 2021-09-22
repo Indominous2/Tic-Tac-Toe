@@ -157,19 +157,7 @@ function GameLoop() {
             } else if (player1 === "X") {
                 ox = ["X", "O", "X", "O", "X", "O", "X", "O", "X"];
             }
-            if (ox[0] === "O") {
-                if (oOrC.length % 2 == 0) {
-                    h1.innerText = "O";
-                } else {
-                    h1.innerText = "X";
-                }
-            } else {
-                if (oOrC.length % 2 == 0) {
-                    h1.innerText = "X";
-                } else {
-                    h1.innerText = "O";
-                }
-            }
+
             for (let i = 0; i < zerosCrosses.length; i++) {
                 zerosCrosses[i].addEventListener("click", () => {
 
