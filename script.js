@@ -79,7 +79,6 @@ function reset() {
         resetBtn.innerText = "Reset";
         let form = document.querySelector(".form");
         form.appendChild(resetBtn)
-        resetBtn.style.display = "none"
     }, 400);
 
 }
